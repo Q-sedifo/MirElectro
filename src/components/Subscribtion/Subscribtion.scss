@@ -1,0 +1,42 @@
+
+.subscription {
+    background-color: #FCF9F6;
+    padding: 60px 0;
+
+    &__wrapper {
+        display: flex;
+    }
+
+    &__left-side {
+        flex: 1;
+        padding-right: 100px;
+    }
+
+    &__right-side {
+        width: 50%;
+        flex: 1;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 60px;
+        align-items: center;
+        min-width: 50%;
+    }
+
+    @media screen and (max-width: 1300px) {
+        &__wrapper {
+            flex-direction: column;
+        }
+
+        &__left-side, &__right-side {
+            width: 100%;
+        }
+
+        &__left-side {
+            padding-left: 30px;
+        }
+
+        &__right-side {
+            padding: 0 30px;
+        }
+    }
+}

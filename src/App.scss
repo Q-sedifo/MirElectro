@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+// Sansation regular
+@font-face {
+    font-family: Sansation;
+    font-weight: 400;
+    src: url('./fonts/Sansation-Regular.ttf');
+}
+
+// Sansation bold
+@font-face {
+    font-family: Sansation;
+    font-weight: 700;
+    src: url('./fonts/Sansation-Bold.ttf');
+}
+
+// Source sans pro
+@font-face {
+    font-family: SourceSansPro;
+    font-weight: 600;
+    src: url('./fonts/SourceSansPro-Semibold.otf');
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Ubuntu', sans-serif;
+    color: #3D3025;
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+}
+
+input {
+    outline: none;
+    background: none;
+    color: #3D3025;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+
+    &::placeholder {
+        color: #B4AEA7;
+    }
+}
+
+.input {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+
+    width: 400px;
+    height: 60px;
+    padding: 20px;
+
+    border-radius: 3px;
+    border: 1px solid #B4AEA7;
+    background: none;
+    color: #3D3025;
+
+    &__text {
+        border: none;
+        flex: 1;
+    }
+
+    &__icon {
+        svg { fill: #98887A; }
+    }
+}
+
+.wrapper {
+    max-width: 1684px;
+    margin: 0 auto;
+}
+
+.title {
+    &__header {
+        font-size: 54px;
+        font-family: Sansation;
+    }
+
+    &__text {
+        font-size: 22px;
+        color: #B4AEA7;
+        width: 420px;
+        line-height: 25px;
+
+        margin-top: 25px;
+        padding-right: 20px;
+    }
+}

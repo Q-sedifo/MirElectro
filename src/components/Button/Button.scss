@@ -1,0 +1,35 @@
+
+.button {
+    font-family: Sansation;
+    font-weight: 700;
+    font-size: 18px;
+    padding: 20px;
+    color: #3D3025;
+    text-decoration: underline;
+    cursor: pointer;
+
+    width: fit-content;
+
+    position: relative;
+
+    background: none;
+    border: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+
+    &__arrow {
+        transition: .4s;
+    }
+
+    &:hover {
+        .button__arrow { transform: translateX(50px); }
+    }
+
+    &__ellipse {
+        position: absolute;
+        left: 0;
+    }
+}

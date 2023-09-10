@@ -1,0 +1,48 @@
+
+.header {
+    padding: 23px;
+    font-size: 20px;
+
+    &__wrapper {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        gap: 30px;
+    }
+
+    &__list {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 40px;
+    }
+
+    &__link {
+        color: #3D3025;
+        cursor: pointer;
+
+        &:hover {
+            color: #98887A;
+            text-decoration: underline;
+        }
+    }
+
+    &__others {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
+
+    &__phone {
+        display: flex;
+        align-items: center;
+        gap: 2px;
+
+        img {
+            width: 15px; height: 15px;
+        }
+    }
+}
